@@ -14,6 +14,8 @@
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f3756), to(#141539));
+  background: linear-gradient(180deg, #1f3756, #141539);
 }
 
 .container {
@@ -27,9 +29,15 @@ body {
   overflow: hidden;
 }
 
+.icon-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .main {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1f3756), to(#141539));
-  background: linear-gradient(180deg, #1f3756, #141539);
   height: 100vh;
 }
 
@@ -104,12 +112,12 @@ body {
   width: 100%;
   height: 277px;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .main .container .game .paperBorder {
   position: absolute;
-  top: -28%;
+  top: -33%;
   left: 18%;
   border: 1.3rem solid #4865f4;
   border-radius: 50%;
@@ -117,20 +125,62 @@ body {
 
 .main .container .game .paperBorder .paper {
   background-color: #F4F2F4;
-  padding: 2.5rem 3rem;
+  width: 150px;
+  height: 150px;
   border-top: 0.5rem solid rgba(96, 110, 133, 0.5);
   border-radius: 50%;
 }
 
-.main .container .game .scissors {
+.main .container .game .scissorsBorder {
   position: absolute;
-  top: -9%;
-  right: 26%;
+  top: -33%;
+  right: 20%;
+  border: 1.3rem solid #ec9e0e;
+  border-radius: 50%;
 }
 
-.main .container .game .rock {
+.main .container .game .scissorsBorder .scissors {
+  background-color: #F4F2F4;
+  width: 150px;
+  height: 150px;
+  border-top: 0.5rem solid rgba(96, 110, 133, 0.5);
+  border-radius: 50%;
+}
+
+.main .container .game .rockBorder {
   position: absolute;
   bottom: 0;
-  left: 46%;
+  left: 36%;
+  border: 1.3rem solid #dc2e4e;
+  border-radius: 50%;
+}
+
+.main .container .game .rockBorder .rock {
+  background-color: #F4F2F4;
+  width: 150px;
+  height: 150px;
+  border-top: 0.5rem solid rgba(96, 110, 133, 0.5);
+  border-radius: 50%;
+}
+
+.main .rules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.main .rules p {
+  color: #F4F2F4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid #606e85;
+  border-radius: 10px;
+  padding: 0.7rem 2.3rem;
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

@@ -41,6 +41,7 @@ $Header-Outline: hsl(217, 16%, 45%);
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
+  background: linear-gradient(180deg, $Radial-Gradient-start, $Radial-Gradient-end);
 }
 
 .container {
@@ -52,8 +53,14 @@ body {
   overflow: hidden;
 }
 
+.icon-img{
+  position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+
 .main {
-  background: linear-gradient(180deg, $Radial-Gradient-start, $Radial-Gradient-end);
   height: 100vh;
 
   .container {
@@ -105,34 +112,72 @@ body {
       width: 100%;
       height: 277px;
       position: relative;
-      margin-top: 2rem;
+      margin-top: 4rem;
 
       .paperBorder {
         position: absolute;
-        top: -28%;
+        top: -33%;
         left: 18%;
         border: 1.3rem solid $Paper-Gradient-start;
         border-radius: 50%;
 
         .paper {
           background-color: #F4F2F4;
-          padding: 2.5rem 3rem;
+          width:150px;
+          height:150px;
           border-top: 0.5rem solid rgba($color: $Header-Outline, $alpha: 0.5);
           border-radius: 50%;
         }
       }
 
-      .scissors {
+      .scissorsBorder {
         position: absolute;
-        top: -9%;
-        right: 26%;
+        top: -33%;
+        right: 20%;
+        border: 1.3rem solid $Scissors-Gradient-start;
+        border-radius: 50%;
+
+        .scissors {
+          background-color: #F4F2F4;
+          width:150px;
+          height:150px;
+          border-top: 0.5rem solid rgba($color: $Header-Outline, $alpha: 0.5);
+          border-radius: 50%;
+        }
       }
 
-      .rock {
+      .rockBorder {
         position: absolute;
         bottom: 0;
-        left: 46%;
+        left: 36%;
+        border: 1.3rem solid $Rock-Gradient-start;
+        border-radius: 50%;
+
+        .rock {
+          background-color: #F4F2F4;
+          width:150px;
+          height:150px;
+          border-top: 0.5rem solid rgba($color: $Header-Outline, $alpha: 0.5);
+          border-radius: 50%;
+        }
       }
+    }
+  }
+
+  .rules {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    cursor: pointer;
+
+    p {
+      color: #F4F2F4;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border: 2px solid $Header-Outline;
+      border-radius: 10px;
+      padding: 0.7rem 2.3rem;
+      display: inline-block;
     }
   }
 }
