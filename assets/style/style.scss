@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+//Font Weight
+
+$font-weight-600:600;
+$font-weight-700:700;
+
+// Color
+
+$Scissors-Gradient-start: hsl(39, 89%, 49%);
+$Scissors-Gradient-end: hsl(40, 84%, 53%);
+$Paper-Gradient-start: hsl(230, 89%, 62%);
+$Paper-Gradient-end: hsl(230, 89%, 65%);
+$Rock-Gradient-start: hsl(349, 71%, 52%);
+$Rock-Gradient-end: hsl(349, 70%, 56%);
+$Lizard-Gradient-start: hsl(261, 73%, 60%);
+$Lizard-Gradient-end: hsl(261, 72%, 63%);
+$Cyan-start: hsl(189, 59%, 53%);
+$Cyan-end: hsl(189, 58%, 57%);
+
+$Radial-Gradient-start: hsl(214, 47%, 23%);
+$Radial-Gradient-end: hsl(237, 49%, 15%);
+
+$Dark-Text: hsl(229, 25%, 31%);
+$Score-Text: hsl(229, 64%, 46%);
+$Header-Outline: hsl(217, 16%, 45%);
+
+//Reset
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 25%;
+  overflow: hidden;
+}
+
+.main {
+  background: linear-gradient(180deg, $Radial-Gradient-start, $Radial-Gradient-end);
+  height: 100vh;
+
+  .container {
+    .logo-score {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 4px solid $Header-Outline;
+      border-radius: 10px;
+      width: 100%;
+      padding: 1rem 1.5rem;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+
+      .score {
+        background: linear-gradient(180deg, #FFFFFF, #F4F2F4);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        padding: 1.2rem 3rem;
+        border-radius: 8px;
+
+        p {
+          color: $Score-Text;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: $font-weight-600;
+        }
+
+        h1 {
+          color: $Dark-Text;
+          font-size: 70px;
+          font-weight: $font-weight-700;
+        }
+      }
+    }
+  }
+}
