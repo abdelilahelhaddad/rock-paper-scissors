@@ -62,8 +62,8 @@ body {
   border-radius: 10px;
   width: 100%;
   padding: 1rem 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .main .container .logo-score .score {
@@ -78,7 +78,7 @@ body {
           flex-direction: column;
   text-align: center;
   height: 100%;
-  padding: 1.2rem 3rem;
+  padding: 0.7rem 2.7rem;
   border-radius: 8px;
 }
 
@@ -182,5 +182,73 @@ body {
   border-radius: 10px;
   padding: 0.7rem 2.3rem;
   display: inline-block;
+}
+
+.main .ham-nav-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.main .ham-nav-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.main .logo_close {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 3rem 0 3rem;
+  width: 30%;
+  border-radius: 10px 10px 0 0;
+}
+
+.main .logo_close p {
+  text-transform: uppercase;
+  color: #606e85;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.main .ham-nav-modalo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  width: 30%;
+  padding: 2rem 0;
+  border-radius: 0 0 10px 10px;
 }
 /*# sourceMappingURL=style.css.map */
