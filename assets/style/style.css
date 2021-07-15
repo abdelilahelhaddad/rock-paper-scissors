@@ -168,14 +168,30 @@ body {
 .main .picked .userChoice,
 .main .picked .computerChoice {
   position: relative;
+  width: 100%;
 }
 
 .main .picked .userChoice h2,
 .main .picked .computerChoice h2 {
   text-transform: uppercase;
+  font-size: 26px;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   color: #FFFFFF;
+  letter-spacing: 2px;
+}
+
+.main .picked .userChoice .pickedShadow,
+.main .picked .computerChoice .pickedShadow {
+  position: absolute;
+  margin-top: 2.5rem;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  background-color: #141539;
+  left: 32%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
 
 .main .picked .userChoice .paperBorder,
@@ -183,7 +199,7 @@ body {
   position: absolute;
   border-radius: 50%;
   border: 1.3rem solid #4865f4;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   -webkit-transform: scale(1.7);
           transform: scale(1.7);
 }
@@ -198,11 +214,11 @@ body {
 }
 
 .main .picked .userChoice .paperBorder {
-  left: 30%;
+  left: 22%;
 }
 
 .main .picked .computerChoice .paperBorder {
-  right: 30%;
+  right: 22%;
 }
 
 .main .rules {
