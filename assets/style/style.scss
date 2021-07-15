@@ -209,9 +209,50 @@ body {
       }
     }
 
+    .userChoice.pick {
+      left: -20%;
+
+      .pickedShadow {
+        display: none;
+      }
+    }
+
     .computerChoice {
       .paperBorder {
         right: 22%;
+      }
+    }
+
+    .computerChoice.pick {
+      right: -20%;
+
+      .pickedShadow {
+        display: none;
+      }
+    }
+
+    .result {
+      align-self: center;
+      text-align: center;
+      width: 100%;
+
+      h2 {
+        font-size: 50px;
+        color: #F4F2F4;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        background-color: #F4F2F4;
+        color: $Dark-Text;
+        padding: 1rem 2.5rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 20px;
+        border-radius: 8px;
       }
     }
   }
