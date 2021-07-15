@@ -96,9 +96,7 @@ body {
 }
 
 .main .container .game {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -115,36 +113,37 @@ body {
   margin-top: 4rem;
 }
 
-.main .container .game .paperBorder {
-  position: absolute;
-  top: -33%;
-  left: 18%;
-  border: 1.3rem solid #4865f4;
-  border-radius: 50%;
-}
-
-.main .container .game .paperBorder .paper {
-  background-color: #F4F2F4;
-  width: 150px;
-  height: 150px;
-  border-top: 0.5rem solid rgba(96, 110, 133, 0.5);
-  border-radius: 50%;
-}
-
+.main .container .game .paperBorder,
 .main .container .game .scissorsBorder {
   position: absolute;
   top: -33%;
-  right: 20%;
-  border: 1.3rem solid #ec9e0e;
   border-radius: 50%;
 }
 
-.main .container .game .scissorsBorder .scissors {
+.main .container .game .paperBorder .paper,
+.main .container .game .paperBorder .scissors,
+.main .container .game .paperBorder .rock,
+.main .container .game .scissorsBorder .paper,
+.main .container .game .scissorsBorder .scissors,
+.main .container .game .scissorsBorder .rock,
+.main .container .game .rockBorder .paper,
+.main .container .game .rockBorder .scissors,
+.main .container .game .rockBorder .rock {
   background-color: #F4F2F4;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-top: 0.5rem solid rgba(96, 110, 133, 0.5);
   border-radius: 50%;
+}
+
+.main .container .game .paperBorder {
+  left: 18%;
+  border: 1.3rem solid #4865f4;
+}
+
+.main .container .game .scissorsBorder {
+  right: 20%;
+  border: 1.3rem solid #ec9e0e;
 }
 
 .main .container .game .rockBorder {
@@ -155,22 +154,61 @@ body {
   border-radius: 50%;
 }
 
-.main .container .game .rockBorder .rock {
+.main .picked {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 55%;
+}
+
+.main .picked .userChoice,
+.main .picked .computerChoice {
+  position: relative;
+}
+
+.main .picked .userChoice h2,
+.main .picked .computerChoice h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #FFFFFF;
+}
+
+.main .picked .userChoice .paperBorder,
+.main .picked .computerChoice .paperBorder {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.3rem solid #4865f4;
+  margin-top: 3rem;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.main .picked .userChoice .paperBorder .paper,
+.main .picked .computerChoice .paperBorder .paper {
   background-color: #F4F2F4;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-top: 0.5rem solid rgba(96, 110, 133, 0.5);
   border-radius: 50%;
 }
 
+.main .picked .userChoice .paperBorder {
+  left: 30%;
+}
+
+.main .picked .computerChoice .paperBorder {
+  right: 30%;
+}
+
 .main .rules {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 2rem;
+  display: inline;
+  position: relative;
+  left: 88%;
   cursor: pointer;
 }
 
