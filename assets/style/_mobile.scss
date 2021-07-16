@@ -30,5 +30,34 @@
         }
       }
     }
+
+    .rules {
+      left: 35%;
+
+      p {
+        padding: 0.5rem 1.8rem;
+      }
+    }
+
+    .ham-nav-container {
+      background-color: #FFFFFF;
+
+      .logo_close {
+        width: 100%;
+        justify-content: center;
+
+        p {
+          margin-bottom: 4rem;
+        }
+
+        img {
+          display: none;
+        }
+      }
+
+      .ham-nav-modalo {
+        width: 100%;
+      }
+    }
   }
 }

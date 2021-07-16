@@ -374,5 +374,29 @@ body {
   .main .container .logo-score .score h1 {
     font-size: 40px;
   }
+  .main .rules {
+    left: 35%;
+  }
+  .main .rules p {
+    padding: 0.5rem 1.8rem;
+  }
+  .main .ham-nav-container {
+    background-color: #FFFFFF;
+  }
+  .main .ham-nav-container .logo_close {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .ham-nav-container .logo_close p {
+    margin-bottom: 4rem;
+  }
+  .main .ham-nav-container .logo_close img {
+    display: none;
+  }
+  .main .ham-nav-container .ham-nav-modalo {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
