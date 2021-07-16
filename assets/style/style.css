@@ -359,7 +359,7 @@ body {
   .main .container .logo-score {
     padding: 0.8rem;
     margin-top: 1rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
   }
   .main .container .logo-score .logo img {
     width: 95px;
@@ -374,8 +374,41 @@ body {
   .main .container .logo-score .score h1 {
     font-size: 40px;
   }
+  .main .container .game {
+    background-size: 200px 180px;
+    margin-top: 2rem;
+  }
+  .main .container .game .paperBorder,
+  .main .container .game .scissorsBorder {
+    top: 0;
+  }
+  .main .container .game .paperBorder .paper,
+  .main .container .game .paperBorder .scissors,
+  .main .container .game .paperBorder .rock,
+  .main .container .game .scissorsBorder .paper,
+  .main .container .game .scissorsBorder .scissors,
+  .main .container .game .scissorsBorder .rock,
+  .main .container .game .rockBorder .paper,
+  .main .container .game .rockBorder .scissors,
+  .main .container .game .rockBorder .rock {
+    width: 90px;
+    height: 90px;
+  }
+  .main .container .game .paperBorder {
+    left: 2%;
+    border: 1rem solid #4865f4;
+  }
+  .main .container .game .scissorsBorder {
+    right: 2%;
+    border: 1rem solid #ec9e0e;
+  }
+  .main .container .game .rockBorder {
+    left: 30%;
+    border: 1rem solid #dc2e4e;
+  }
   .main .rules {
     left: 35%;
+    top: 5%;
   }
   .main .rules p {
     padding: 0.5rem 1.8rem;

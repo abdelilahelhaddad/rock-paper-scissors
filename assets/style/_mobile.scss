@@ -8,7 +8,7 @@
       .logo-score {
         padding: 0.8rem;
         margin-top: 1rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 0.5rem;
 
         .logo {
           img {
@@ -29,10 +29,48 @@
           }
         }
       }
+
+      .game {
+        background-size: 200px 180px;
+        margin-top: 2rem;
+
+        .paperBorder,
+        .scissorsBorder {
+          top: 0;
+        }
+
+        .paperBorder,
+        .scissorsBorder,
+        .rockBorder {
+
+          .paper,
+          .scissors,
+          .rock {
+            width: 90px;
+            height: 90px;
+          }
+        }
+
+        .paperBorder {
+          left: 2%;
+          border: 1rem solid $Paper-Gradient-start;
+        }
+
+        .scissorsBorder {
+          right: 2%;
+          border: 1rem solid $Scissors-Gradient-start;
+        }
+
+        .rockBorder {
+          left: 30%;
+          border: 1rem solid $Rock-Gradient-start;
+        }
+      }
     }
 
     .rules {
       left: 35%;
+      top: 5%;
 
       p {
         padding: 0.5rem 1.8rem;
