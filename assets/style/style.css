@@ -426,7 +426,8 @@ body {
     margin-bottom: 4rem;
   }
   .main .ham-nav-container .logo_close img {
-    display: none;
+    position: absolute;
+    bottom: 5%;
   }
   .main .ham-nav-container .ham-nav-modalo {
     width: 100%;
