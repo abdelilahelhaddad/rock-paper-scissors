@@ -23,9 +23,23 @@ let userChoice = undefined;
 circles.forEach((circle) => {
   circle.addEventListener("click", () => {
     userChoice = circle.getAttribute("data-choice");
-    console.log(userChoice);
+    checkWinner();
   });
 })
+
+function checkWinner() {
+  const computerChoice = computerRandomChoice();
+
+  if (userChoice === computerChoice) {
+    //draw
+  } else if ((userChoice === "paper" && computerChoice === "rock") || (userChoice === "rock" && computerChoice === "scissors") || (userChoice === "scissors" && computerChoice === "paper")) {
+    //user won
+    updateScore(1);
+  } else {
+    //user lost
+    updateScore(-1);
+  }
+}
 
 function updateScore(value) {
   gameScore += value;
