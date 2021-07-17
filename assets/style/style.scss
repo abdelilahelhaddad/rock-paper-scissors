@@ -202,10 +202,45 @@ body {
           border-radius: 50%;
         }
       }
+
+      .scissorsBorder {
+        position: absolute;
+        border-radius: 50%;
+        border: 1.3rem solid $Scissors-Gradient-start;
+        margin-top: 2.5rem;
+        transform: scale(1.7);
+
+        .scissors {
+          background-color: #F4F2F4;
+          width: 120px;
+          height: 120px;
+          border-top: 0.5rem solid rgba($color: $Header-Outline, $alpha: 0.5);
+          border-radius: 50%;
+        }
+      }
+
+      .rockBorder {
+        position: absolute;
+        border-radius: 50%;
+        border: 1.3rem solid $Rock-Gradient-start;
+        margin-top: 2.5rem;
+        transform: scale(1.7);
+
+        .rock {
+          background-color: #F4F2F4;
+          width: 120px;
+          height: 120px;
+          border-top: 0.5rem solid rgba($color: $Header-Outline, $alpha: 0.5);
+          border-radius: 50%;
+        }
+      }
     }
 
     .userChoice {
-      .paperBorder {
+
+      .paperBorder,
+      .scissorsBorder,
+      .rock {
         left: 22%;
       }
     }

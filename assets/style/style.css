@@ -216,7 +216,47 @@ body {
   border-radius: 50%;
 }
 
-.main .picked .userChoice .paperBorder {
+.main .picked .userChoice .scissorsBorder,
+.main .picked .computerChoice .scissorsBorder {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.3rem solid #ec9e0e;
+  margin-top: 2.5rem;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.main .picked .userChoice .scissorsBorder .scissors,
+.main .picked .computerChoice .scissorsBorder .scissors {
+  background-color: #F4F2F4;
+  width: 120px;
+  height: 120px;
+  border-top: 0.5rem solid rgba(96, 110, 133, 0.5);
+  border-radius: 50%;
+}
+
+.main .picked .userChoice .rockBorder,
+.main .picked .computerChoice .rockBorder {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.3rem solid #dc2e4e;
+  margin-top: 2.5rem;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.main .picked .userChoice .rockBorder .rock,
+.main .picked .computerChoice .rockBorder .rock {
+  background-color: #F4F2F4;
+  width: 120px;
+  height: 120px;
+  border-top: 0.5rem solid rgba(96, 110, 133, 0.5);
+  border-radius: 50%;
+}
+
+.main .picked .userChoice .paperBorder,
+.main .picked .userChoice .scissorsBorder,
+.main .picked .userChoice .rock {
   left: 22%;
 }
 
