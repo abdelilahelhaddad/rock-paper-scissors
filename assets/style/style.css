@@ -96,9 +96,7 @@ body {
 }
 
 .main .container .game {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -157,7 +155,9 @@ body {
 }
 
 .main .picked {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -445,6 +445,96 @@ body {
   .main .container .game .rockBorder {
     left: 30%;
     border: 1rem solid #dc2e4e;
+  }
+  .main .picked {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 55%;
+  }
+  .main .picked .userChoice,
+  .main .picked .computerChoice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  .main .picked .userChoice h2,
+  .main .picked .computerChoice h2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    font-size: 12px;
+    margin-bottom: 0rem;
+  }
+  .main .picked .userChoice .pickedShadow,
+  .main .picked .computerChoice .pickedShadow {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: absolute;
+    margin-top: 2.5rem;
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
+    background-color: #141539;
+    left: 32%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .main .picked .userChoice .paperBorder,
+  .main .picked .userChoice .scissorsBorder,
+  .main .picked .userChoice .rockBorder,
+  .main .picked .computerChoice .paperBorder,
+  .main .picked .computerChoice .scissorsBorder,
+  .main .picked .computerChoice .rockBorder {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 0rem;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .main .picked .userChoice .paperBorder,
+  .main .picked .userChoice .scissorsBorder,
+  .main .picked .userChoice .rock {
+    left: 22%;
+  }
+  .main .picked .userChoice.pick {
+    left: 0;
+  }
+  .main .picked .userChoice.pick .pickedShadow {
+    display: none;
+  }
+  .main .picked .computerChoice .paperBorder {
+    right: 22%;
+  }
+  .main .picked .computerChoice.pick {
+    right: 0;
+  }
+  .main .picked .computerChoice.pick .pickedShadow {
+    display: none;
+  }
+  .main .picked .result {
+    position: absolute;
+    bottom: 25%;
+    width: 90%;
+  }
+  .main .picked .result h2 {
+    font-size: 40px;
+  }
+  .main .picked .result a {
+    display: inline;
+    padding: 0.7rem 1.8rem;
+    font-size: 15px;
   }
   .main .rules {
     left: 35%;

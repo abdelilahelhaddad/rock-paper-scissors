@@ -68,6 +68,93 @@
       }
     }
 
+    .picked {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 55%;
+
+      .userChoice,
+      .computerChoice {
+        display: flex;
+        position: relative;
+        width: 100%;
+
+        h2 {
+          order: 3;
+          font-size: 12px;
+          margin-bottom: 0rem;
+        }
+
+        .pickedShadow {
+          order: 1;
+          position: absolute;
+          margin-top: 2.5rem;
+          transform: scale(1.7);
+          background-color: $Radial-Gradient-end;
+          left: 32%;
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+
+        .paperBorder,
+        .scissorsBorder,
+        .rockBorder {
+          order: 2;
+          margin-top: 0rem;
+          transform: scale(0.8);
+        }
+      }
+
+      .userChoice {
+
+        .paperBorder,
+        .scissorsBorder,
+        .rock {
+          left: 22%;
+        }
+      }
+
+      .userChoice.pick {
+        left: 0;
+
+        .pickedShadow {
+          display: none;
+        }
+      }
+
+      .computerChoice {
+        .paperBorder {
+          right: 22%;
+        }
+      }
+
+      .computerChoice.pick {
+        right: 0;
+
+        .pickedShadow {
+          display: none;
+        }
+      }
+
+      .result {
+        position: absolute;
+        bottom: 25%;
+        width: 90%;
+
+        h2 {
+          font-size: 40px;
+        }
+
+        a {
+          display: inline;
+          padding: 0.7rem 1.8rem;
+          font-size: 15px;
+        }
+      }
+    }
+
     .rules {
       left: 35%;
       top: 5%;
