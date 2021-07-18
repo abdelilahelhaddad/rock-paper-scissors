@@ -447,48 +447,29 @@ body {
     border: 1rem solid #dc2e4e;
   }
   .main .picked {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 55%;
+    height: 30%;
   }
   .main .picked .userChoice,
   .main .picked .computerChoice {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
-    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .main .picked .userChoice h2,
   .main .picked .computerChoice h2 {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
     font-size: 12px;
     margin-bottom: 0rem;
+    width: 100%;
   }
   .main .picked .userChoice .pickedShadow,
   .main .picked .computerChoice .pickedShadow {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    position: absolute;
-    margin-top: 2.5rem;
-    -webkit-transform: scale(1.7);
-            transform: scale(1.7);
-    background-color: #141539;
-    left: 32%;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    margin-top: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   .main .picked .userChoice .paperBorder,
   .main .picked .userChoice .scissorsBorder,
@@ -496,37 +477,34 @@ body {
   .main .picked .computerChoice .paperBorder,
   .main .picked .computerChoice .scissorsBorder,
   .main .picked .computerChoice .rockBorder {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
     margin-top: 0rem;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  .main .picked .userChoice .paperBorder,
-  .main .picked .userChoice .scissorsBorder,
-  .main .picked .userChoice .rock {
-    left: 22%;
-  }
   .main .picked .userChoice.pick {
-    left: 0;
+    left: -3%;
   }
   .main .picked .userChoice.pick .pickedShadow {
     display: none;
   }
-  .main .picked .computerChoice .paperBorder {
-    right: 22%;
+  .main .picked .userChoice .paperBorder,
+  .main .picked .userChoice .scissorsBorder,
+  .main .picked .userChoice .rock {
+    left: 0;
   }
   .main .picked .computerChoice.pick {
-    right: 0;
+    right: -3%;
   }
   .main .picked .computerChoice.pick .pickedShadow {
     display: none;
   }
+  .main .picked .computerChoice .paperBorder {
+    right: 0;
+  }
   .main .picked .result {
     position: absolute;
     bottom: 25%;
-    width: 90%;
+    width: 80%;
   }
   .main .picked .result h2 {
     font-size: 40px;
@@ -538,7 +516,7 @@ body {
   }
   .main .rules {
     left: 35%;
-    top: 5%;
+    top: 30%;
   }
   .main .rules p {
     padding: 0.5rem 1.8rem;

@@ -69,41 +69,37 @@
     }
 
     .picked {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      height: 55%;
+      height: 30%;
 
       .userChoice,
       .computerChoice {
         display: flex;
-        position: relative;
-        width: 100%;
+        flex-direction: column-reverse;
 
         h2 {
-          order: 3;
           font-size: 12px;
           margin-bottom: 0rem;
+          width: 100%;
         }
 
         .pickedShadow {
-          order: 1;
-          position: absolute;
-          margin-top: 2.5rem;
-          transform: scale(1.7);
-          background-color: $Radial-Gradient-end;
-          left: 32%;
-          width: 120px;
-          height: 120px;
-          border-radius: 50%;
+          margin-top: 0;
+          transform: scale(0.8);
         }
 
         .paperBorder,
         .scissorsBorder,
         .rockBorder {
-          order: 2;
           margin-top: 0rem;
           transform: scale(0.8);
+        }
+      }
+
+      .userChoice.pick {
+        left: -3%;
+
+        .pickedShadow {
+          display: none;
         }
       }
 
@@ -112,12 +108,12 @@
         .paperBorder,
         .scissorsBorder,
         .rock {
-          left: 22%;
+          left: 0;
         }
       }
 
-      .userChoice.pick {
-        left: 0;
+      .computerChoice.pick {
+        right: -3%;
 
         .pickedShadow {
           display: none;
@@ -126,22 +122,14 @@
 
       .computerChoice {
         .paperBorder {
-          right: 22%;
-        }
-      }
-
-      .computerChoice.pick {
-        right: 0;
-
-        .pickedShadow {
-          display: none;
+          right: 0;
         }
       }
 
       .result {
         position: absolute;
         bottom: 25%;
-        width: 90%;
+        width: 80%;
 
         h2 {
           font-size: 40px;
@@ -157,7 +145,7 @@
 
     .rules {
       left: 35%;
-      top: 5%;
+      top: 30%;
 
       p {
         padding: 0.5rem 1.8rem;
