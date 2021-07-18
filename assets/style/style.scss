@@ -102,7 +102,7 @@ body {
     }
 
     .game {
-      display: none;
+      display: flex;
       justify-content: center;
       align-items: center;
       background-image: url('/assets/images/bg-triangle.svg');
@@ -139,25 +139,28 @@ body {
       .paperBorder {
         left: 18%;
         border: 1.3rem solid $Paper-Gradient-start;
+        box-shadow: 0px 8px 0px hsl(230, 47%, 45%);
       }
 
       .scissorsBorder {
         right: 20%;
         border: 1.3rem solid $Scissors-Gradient-start;
+        box-shadow: 0px 8px 0px hsl(40, 74%, 44%);
       }
 
       .rockBorder {
         position: absolute;
-        bottom: 0;
+        bottom: 5%;
         left: 36%;
         border: 1.3rem solid $Rock-Gradient-start;
+        box-shadow: 0px 8px 0px hsl(349, 55%, 46%);
         border-radius: 50%;
       }
     }
   }
 
   .picked {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     height: 55%;

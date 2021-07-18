@@ -96,7 +96,9 @@ body {
 }
 
 .main .container .game {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -139,25 +141,29 @@ body {
 .main .container .game .paperBorder {
   left: 18%;
   border: 1.3rem solid #4865f4;
+  -webkit-box-shadow: 0px 8px 0px #3d4fa9;
+          box-shadow: 0px 8px 0px #3d4fa9;
 }
 
 .main .container .game .scissorsBorder {
   right: 20%;
   border: 1.3rem solid #ec9e0e;
+  -webkit-box-shadow: 0px 8px 0px #c38c1d;
+          box-shadow: 0px 8px 0px #c38c1d;
 }
 
 .main .container .game .rockBorder {
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   left: 36%;
   border: 1.3rem solid #dc2e4e;
+  -webkit-box-shadow: 0px 8px 0px #b6354c;
+          box-shadow: 0px 8px 0px #b6354c;
   border-radius: 50%;
 }
 
 .main .picked {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -502,7 +508,7 @@ body {
     right: 0;
   }
   .main .picked .result {
-    position: absolute;
+    position: fixed;
     bottom: 25%;
     width: 80%;
   }
