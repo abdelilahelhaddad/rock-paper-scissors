@@ -143,14 +143,7 @@
       }
     }
 
-    .rules {
-      left: 35%;
-      top: 30%;
 
-      p {
-        padding: 0.5rem 1.8rem;
-      }
-    }
 
     .ham-nav-container {
       background-color: #FFFFFF;
@@ -172,6 +165,15 @@
       .ham-nav-modalo {
         width: 100%;
       }
+    }
+  }
+
+  .rules {
+    text-align: center;
+    margin-right: 0;
+
+    p {
+      padding: 0.5rem 1.8rem;
     }
   }
 }
